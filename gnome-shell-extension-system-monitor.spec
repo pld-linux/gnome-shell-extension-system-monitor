@@ -2,7 +2,7 @@
 Summary:	Display system informations in gnome shell status bar
 Name:		gnome-shell-extension-%{extname}
 Version:	20121027
-Release:	1
+Release:	2
 Group:		X11/Applications
 License:	GPLv3
 # $ git clone git://github.com/paradoxxxzero/gnome-shell-system-monitor-applet.git
@@ -37,6 +37,7 @@ install *.js* $RPM_BUILD_ROOT%{_datadir}/gnome-shell/extensions/system-monitor@p
 install *.css $RPM_BUILD_ROOT%{_datadir}/gnome-shell/extensions/system-monitor@paradoxxx.zero.gmail.com
 
 cp -a locale/* $RPM_BUILD_ROOT%{_datadir}/locale
+%{__mv} $RPM_BUILD_ROOT%{_datadir}/locale/es{_ES,}
 
 %find_lang %{extname}
 
