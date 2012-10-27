@@ -11,9 +11,6 @@ License:	GPLv3
 Source0:	%{extname}-%{version}.tar.xz
 # Source0-md5:	246e68ef905a9bfa4fd924040f6e271d
 URL:		https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet/
-BuildRequires:	gnome-common
-BuildRequires:	intltool
-BuildRequires:	gnome-desktop-devel
 Requires:	gnome-shell >= 3.6.0
 # This is no mistake, this extensions requires *.gir files from those packages
 Requires:	NetworkManager-devel
