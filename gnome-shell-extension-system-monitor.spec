@@ -16,7 +16,7 @@ URL:		https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet/
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	gnome-shell >= 3.6.0
-# This is no mistake, this extensions requires *.gir files from those packages
+# This is no mistake, this extension requires *.gir files from those packages
 Requires:	NetworkManager-devel
 Requires:	libgtop-devel
 BuildArch:	noarch
