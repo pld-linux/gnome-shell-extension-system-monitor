@@ -1,3 +1,5 @@
+# TODO
+# - do something not to pull NM-devel to get *.gir?
 %define		extname		system-monitor
 Summary:	Display system informations in gnome shell status bar
 Name:		gnome-shell-extension-%{extname}
