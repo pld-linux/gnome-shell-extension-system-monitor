@@ -1,10 +1,8 @@
-# TODO
-# - do something not to pull NM-devel to get *.gir?
 %define		extname		system-monitor
 Summary:	Display system informations in gnome shell status bar
 Name:		gnome-shell-extension-%{extname}
 Version:	20121027
-Release:	2
+Release:	3
 License:	GPL v3
 Group:		X11/Applications
 # $ git clone git://github.com/paradoxxxzero/gnome-shell-system-monitor-applet.git
@@ -16,9 +14,8 @@ URL:		https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet/
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	gnome-shell >= 3.6.0
-# This is no mistake, this extension requires *.gir files from those packages
-Requires:	NetworkManager-devel
-Requires:	libgtop-devel
+Requires:	NetworkManager-libs
+Requires:	libgtop
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
